@@ -7,7 +7,7 @@ videos.forEach((video) => {
   videosHTML += `
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail js-thumbnail" data-video-title ="${video.title}" src="${video.thumbnail}">
+        <img class="thumbnail js-thumbnail" data-video-url ="${video.url}" src="${video.thumbnail}">
         <div class="video-time">${video.time}</div>
       </div>
       <div class="video-info-grid">
@@ -43,12 +43,13 @@ function openTab(url,target) {
   
 document.querySelectorAll('.js-thumbnail').forEach((thumbnail) => {
   thumbnail.addEventListener('click', () => {
-    const videoTitle = thumbnail.dataset.videoTitle;
+    console.log("hello");
+    const videoUrl = thumbnail.dataset.videoUrl;
     //addToCart(productId);
     //updateCartQuantity()
-    openTab('https://www.youtube.com/watch?v=faPrckGlU_s','_blank');
+    openTab(videoUrl,'_blank');
       
-    console.log(videoTitle);
+   console.log(videoUrl);
   });
     //console.log(cart);
   });

@@ -1,11 +1,3 @@
-//import data from '../../backend/test1.json' with { type: "json" };
-//console.log(data);
-
-/*
-fetch("../../backend/test.json")
-  .then(respnse => respnse.json())
-  .then(value => console.log(value))
-*/
 class Video {
   thumbnail;
   title;
@@ -42,7 +34,7 @@ class Video {
     title: "יסמין מועלם - יוצאת מזה (Live קיסריה)",
     author: "יסמין מועלם" ,
     stats: "41 מינוים",
-    time: "3:40",
+    time: "03:40",
     profile: "channel-pictures/yasmin.jpg",
     url: "https://www.youtube.com/watch?v=ieRsVGMb-0g"
   },

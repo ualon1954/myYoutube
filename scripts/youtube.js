@@ -45,7 +45,7 @@ document.querySelector('.youtube-logo').addEventListener('click', () => {
 
 document.querySelector('.home').addEventListener('click', () => {
  //console.log('home');
-  window.open('https://www.youtube.com/','_blank');
+ // window.open('https://www.youtube.com/','_blank');
 
 });
 
